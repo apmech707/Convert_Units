@@ -10,18 +10,20 @@ start = False
 
 
 def end_program():
+    '''Function to change the start flag to false.'''
     global start
     start=False
 
 def start_program():
+    '''Function to change the start flag to true and begin the main program loop'''
     info()
     global start
     start=True
 
     while start:
         
-        check_logged_file()
-        set_pass()
+        check_logged_file() #This is called from convert_dependencies
+        set_pass() # This is also called from convert_dependencies
         
         choices_allowed = ('1', '2', '3', '4', '5', '6')
         c = input("Enter your choice of conversion:")
@@ -83,6 +85,6 @@ def start_program():
                 choice_error()
                 continue
                 
-                
+# If you run convert.py as start program runs. This code block allows me to add it to the unfinished maintenance app and call it when i need it.                
 if __name__ == "__main__":
 	start_program()
