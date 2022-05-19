@@ -58,12 +58,12 @@ class car():
         print(self.wishlist)
 
 miles= 63000
-barry_baluga= car(2014, "Subaru", miles)
+Car = car(2014, "Ford", miles)
 flag=False
 
 
 while True:
-    my_car= barry_baluga
+    my_car= Car
     
     if flag==False:
         print("\nWelcome.\nUse this app to assist with your car's maintnenance schedule.\nType help for a list of available commands.\nRead the \"README\" file for more indepth description of how to use the commands.\nEnjoy, and happy wrenching.")
@@ -110,6 +110,7 @@ while True:
         continue
         
     elif command == "convert":
+        '''This calls the convert.py program. The convert.py and convert_dependancies need to be in the same directory'''
         convert.start_program()
         continue
     
