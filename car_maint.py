@@ -1,3 +1,7 @@
+''' This project is a work in progress. It runs and can use the convert.py program, but is functionally incomplete. I am not sure
+at this point which direction I want to take it so I have put it up here and will work with it in public. If you would like to take it in 
+another direction as I add to it you are free to fork it.'''
+
 import datetime
 import convert
 
